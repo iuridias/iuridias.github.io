@@ -8,4 +8,4 @@ categories: posts
 tags: 'post'
 author: Iuri
 ---
-My first post for jekyll.
+My first post for _jekyll_.
