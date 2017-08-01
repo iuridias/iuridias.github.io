@@ -30,32 +30,6 @@ safe: false
 lsi: false
 excerpt_separator: "\n\n"
 
-# Social Links
-#email:             email
-#google.plus:        username
-twitter:            iuriidias
-#facebook:           username
-github:             iuridias
-##stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-instagram:          iuriidias
-#lastfm:            username
-#tumblr:            username
-#pinterest:         username
-#foursquare:        username
-#steam:              username
-#dribbble:          username
-#youtube:           username
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
-##behance:           username
-
 # Theme settings
 compress_html:
   comments: ["<!-- ", " -->"]
