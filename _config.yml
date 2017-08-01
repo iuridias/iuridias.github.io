@@ -32,7 +32,7 @@ excerpt_separator: "\n\n"
 
 # Theme settings
 compress_html:
-  comments: ["<!-- ", " -->"]
+  comments: true
   clippings: all
   endings: all
 
