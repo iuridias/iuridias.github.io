@@ -6,8 +6,8 @@ summary: ""
 date:   2017-07-31 11:31:47 +0700
 categories: posts
 tags: 'post'
-author: Iuri
 comments: true
+author: Iuri
 ---
 
 Claro que pra começar, não posso sair da tradição de criar o primeiro Hello World em Markdown.
