@@ -1,29 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iuri Dias - Desenvolvedor Front-end</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <header class="cabecalho">
     <button class="cabecalho__menu" aria-label="Menu"><i></i></button>
   </header>
   <nav class="menu-lateral">
-      <h2 class="menu-lateral__titulo">ID</h2>
-      <a href="#" class="menu-lateral__link menu-lateral__link-inicio menu-lateral__link--ativo">Home</a>
-      <a href="#" class="menu-lateral__link menu-lateral__link-sobre">Sobre</a>
-      <a href="#" class="menu-lateral__link menu-lateral__link-habilidades">Habilidades</a>
-      <a href="#" class="menu-lateral__link menu-lateral__link-projetos">Projetos</a>
-      <a href="#" class="menu-lateral__link menu-lateral__link-contato">Contato</a>
+    <h2 class="menu-lateral__titulo">ID</h2>
+    <a href="#id-home" class="menu-lateral__link menu-lateral__link-inicio menu-lateral__link--ativo">Home</a>
+    <a href="#id-sobre" class="menu-lateral__link menu-lateral__link-sobre menu-lateral__link--ativo">Sobre</a>
+    <a href="#id-skills" class="menu-lateral__link menu-lateral__link-habilidades menu-lateral__link--ativo">Habilidades</a>
+    <a href="#id-projetos" class="menu-lateral__link menu-lateral__link-projetos menu-lateral__link--ativo">Projetos</a>
+    <a href="#id-contato" class="menu-lateral__link menu-lateral__link-contato menu-lateral__link--ativo">Contato</a>
   </nav>
-    
+  <section class="destaque" id="id-home">
+    <img src="./images/hero.png" alt="Minha foto como destaque na página" class="destaque--hero-img">
+    <div class="destaque--apresentacao">
+      <p class="destaque--apresentacao-saudacao">Olá! Eu sou o</p>
+      <h1 class="destaque--apresentacao-titulo"><span>Iuri</span> Dias</h1>
+      <p class="destaque--apresentacao-bio">Um <span>Desenvolvedor Full Stack</span> em formação, motivado a aprender e colocar muitos projetos em prática.</p>
+      <ul class="destaque--apresentacao-links">
+        <li class="destaque--apresentacao-link"><a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="Logo do Linkedin" class="destaque--apresentacao-link-img"></a></li>
+        <li class="destaque--apresentacao-link"><a href="#"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Logo do Github" class="destaque--apresentacao-link-img"></a></li>
+      </ul>
+    </div>
+  </section>
+  <section class="secao sobre"  id="id-sobre">
+    <div class="secao--separador">
+      <span>Informações</span>
+      <h2 class="secao--separador-titulo">Sobre</h2>
+    </div>
+    <article class="secao--conteudo">
+      <p class="secao--conteudo-texto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </article>
+  </section>
+  <section class="secao skills"  id="id-skills">
+    <div class="secao--separador">
+      <span>Tecnologias e</span>
+      <h2 class="secao--separador-titulo">Skills</h2>
+    </div>
+    <article class="secao--conteudo">
+      <ul class="secao--conteudo-skills">
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="Logo do HTML 5">
+            <p>HTML</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="Logo do CSS 3">
+            <p>CSS</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Logo do Javascript">
+            <p>Javascript</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Logo do NodeJS">
+            <p>NodeJS</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Logo do Git">
+            <p>Git</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Logo do Windows">
+            <p>Windows</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Logo do Linux">
+            <p>Linux</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="Logo do VSCode">
+            <p>VSCode</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="Logo do MongoDB">
+            <p>MongoDB</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="Logo do MySQL">
+            <p>MySQL</p>
+          </div>
+        </li>
+        <li>
+          <div class="secao--conteudo--skills-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Logo do Express">
+            <p>Express</p>
+          </div>
+        </li>
+      </ul>
+    </article>
+  </section>
+  <section class="secao projetos"  id="id-projetos">
+    <div class="secao--separador">
+      <span>Dê uma olhada nos meus</span>
+      <h2 class="secao--separador-titulo">Projetos</h2>
+    </div>
+    <article class="secao--conteudo">
+      <article class="secao--projetos-card">
+        <img src="./images/project-test.jpg" alt="Projeto de Exemplo">
+        <div class="secao--projetos-card-conteudo">
+          <h3>Projeto Teste</h3>
+          <h4>Tecnologias utilizadas: <span>Ex1, Ex2, Ex3</span></h4>
+          <ul>
+            <li>Caracteristica 1</li>
+            <li>Caracteristica 2</li>
+            <li>Caracteristica 3</li>
+          </ul>
+          <div class="secao--projetos-card-links">
+            <a href="#">Exemplo</a>
+            <a href="#">Repositório</a>
+          </div>
+        </div>
+      </article>
+      <article class="secao--projetos-card">
+        <img src="./images/project-test.jpg" alt="Projeto de Exemplo">
+        <div class="secao--projetos-card-conteudo">
+          <h3>Projeto Teste 2</h3>
+          <h4>Tecnologias utilizadas: <span>Ex1, Ex2, Ex3</span></h4>
+          <ul>
+            <li>Caracteristica 1</li>
+            <li>Caracteristica 2</li>
+            <li>Caracteristica 3</li>
+          </ul>
+          <div class="secao--projetos-card-links">
+            <a href="#">Exemplo</a>
+            <a href="#">Repositório</a>
+          </div>
+        </div>
+      </article>
+    </article>
+  </section>
+  <section class="secao contato"  id="id-contato">
+    <div class="secao--separador">
+      <span>Diga Olá!</span>
+      <h2 class="secao--separador-titulo">Contato</h2>
+    </div>
+    <article class="secao--conteudo">
+      <div class="secao--projetos-card secao--contato--card">
+          <i></i>
+          <a href="mailto:iuridias.mw@gmail.com">iuridias.mw@gmail.com</a>
+          <p>Me mande um email!</p>
+      </div>
+    </article>
+  </section>
+  <footer class="rodape">
+    <p>© Iuri Dias</p>
+  </footer>
   <script src="./js/index.js"></script>
 </body>
+
 </html>
