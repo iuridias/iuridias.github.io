@@ -1,32 +1,36 @@
+//Constantes para Menu e Switch de Modo (Dark e Light)
 const botaoMenu = document.querySelector('.cabecalho__menu');
+const botaoMode = document.querySelector('.cabecalho__mode');
 const menu = document.querySelector('.menu-lateral');
 
- botaoMenu.addEventListener('click', () => {
-   menu.classList.toggle('menu-lateral--ativo');
- })
+//Const para salvar estado do modo dark
+const storageMode = localStorage.getItem('statusDarkMode')
 
-const menuHome = document.querySelector('.menu-lateral__link-inicio');
-const menuSobre = document.querySelector('.menu-lateral__link-sobre');
-const menuHabilidades = document.querySelector('.menu-lateral__link-habilidades');
-const menuProjetos = document.querySelector('.menu-lateral__link-projetos');
-const menuContato = document.querySelector('.menu-lateral__link-contato');
 
-menuHome.addEventListener('click', () => {
+//Constante para desaparecer o Menu ao clicar
+const menuLinks = document.querySelectorAll('.menu-lateral__link');
+
+//Verifica o Storage para determinar o dark-mode
+if (storageMode) {
+  document.documentElement.classList.add('dark-mode');
+}
+
+botaoMenu.addEventListener('click', () => {
   menu.classList.toggle('menu-lateral--ativo');
-})
+});
 
-menuSobre.addEventListener('click', () => {
-  menu.classList.toggle('menu-lateral--ativo');
-})
+botaoMode.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark-mode');
+  //Se o dark-mode tiver ativo, salva seu estado no storage, senão remove o status
+  if (document.documentElement.classList.contains('dark-mode')) {
+    localStorage.setItem('statusDarkMode', true);
+  } else {
+    localStorage.removeItem('statusDarkMode');
+  }
+});
 
-menuHabilidades.addEventListener('click', () => {
-  menu.classList.toggle('menu-lateral--ativo');
-})
-
-menuProjetos.addEventListener('click', () => {
-  menu.classList.toggle('menu-lateral--ativo');
-})
-
-menuContato.addEventListener('click', () => {
-  menu.classList.toggle('menu-lateral--ativo');
-})
+for (let i = 0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener('click', () => {
+    menu.classList.toggle('menu-lateral--ativo');
+  })
+}
