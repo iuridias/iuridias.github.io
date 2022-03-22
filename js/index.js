@@ -6,6 +6,8 @@ const menu = document.querySelector('.menu-lateral');
 //Const para salvar estado do modo dark
 const storageMode = localStorage.getItem('statusDarkMode')
 
+//Meta Tag - para alterar cor da barra superior do android
+const metaThemeColor = document.querySelector('meta[name=theme-color]');
 
 //Constante para desaparecer o Menu ao clicar
 const menuLinks = document.querySelectorAll('.menu-lateral__link');
@@ -13,6 +15,7 @@ const menuLinks = document.querySelectorAll('.menu-lateral__link');
 //Verifica o Storage para determinar o dark-mode
 if (storageMode) {
   document.documentElement.classList.add('dark-mode');
+  metaThemeColor.setAttribute('content', '#141414');
 }
 
 botaoMenu.addEventListener('click', () => {
@@ -26,6 +29,7 @@ botaoMode.addEventListener('click', () => {
     localStorage.setItem('statusDarkMode', true);
   } else {
     localStorage.removeItem('statusDarkMode');
+    metaThemeColor.setAttribute('content', '#F7F7F7');
   }
 });
 
