@@ -67,13 +67,6 @@ span {
   padding: 8px 16px;
 }
 
-/* .cabecalho__menu {
-  position: fixed;
-  right: 0;
-  top: 0;
-  padding: 8px 16px;
-} */
-
 .cabecalho__menu i::before {
   content: "\e9bd";
   font-size: 4.5vh;
@@ -165,25 +158,48 @@ span {
   content: "\ea83";
 }
 
+
+
 .destaque {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px ;
+  padding: 48px 24px 24px 24px ;
 }
 
 .destaque--hero-img {
-  max-width: 70%;
-  max-height: 70%;
+  max-width: 250px;
+  max-height: 250px;
   border-radius: 50%;
   box-shadow: 8px 0 var(--destaque-hero-shadow1), 16px 0 var(--destaque-hero-shadow2), 24px 0 var(--destaque-hero-shadow3);
+}
+
+@media screen and (min-width:768px) {
+  .destaque--hero-img {
+    max-width: 40%;
+    max-height: 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destaque--hero-img {
+    max-width: 40%;
+    max-height: 40%;
+  }
 }
 
 .destaque--apresentacao {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px 8px;
+  padding: 32px 8px 16px 8px;
+}
+
+@media screen and (min-width: 1024px) {
+  .destaque--apresentacao {
+    width: 30%;
+    align-items: flex-start;
+  }
 }
 
 .destaque--apresentacao-saudacao {
@@ -233,6 +249,27 @@ span {
   filter: brightness(var(--contrast-img)) contrast(var(--brightness-img));
 }
 
+@media screen and (min-width: 1024px) {
+  .destaque--apresentacao-bio {
+    text-align: initial;
+  }
+
+  .destaque--apresentacao-titulo {
+    margin: 12px 0;
+  }
+
+  .destaque--apresentacao-links {
+    justify-content: flex-start;
+    text-align: initial;
+    padding-left: 0;
+  }
+
+  .destaque--apresentacao-link a, .destaque--apresentacao-link {
+    padding: 0;
+    justify-content: flex-start;
+  }
+}
+
 .secao {
   padding: 32px 16px;
 }
@@ -244,12 +281,24 @@ span {
   letter-spacing: 2px;
 }
 
-.secao--conteudo-texto {
+.secao--conteudo p {
   font-weight: 500;
   line-height: 1.3;
   font-size: 1.1rem;
   text-align: justify;
   padding: 8px 0;
+}
+
+@media screen and (min-width:768px) {
+  .secao--conteudo {
+    border: 1px solid var(--border-section);
+    box-shadow: 0px 14px 28px var(--section-card-shadow);
+    border-radius: 40px;
+    padding: 36px;
+    margin: 16px;
+    background-color: var(--contrast-color);
+  }
+
 }
 
 .secao--separador span::before {
@@ -276,9 +325,21 @@ span {
 .secao--conteudo-skills {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-  
   gap: 15px;
   padding: 16px 0;
+}
+
+@media screen and (min-width:768px) {
+  .secao--conteudo-skills {
+    gap: 48px;
+    background-color: var(--contrast-color);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .secao--conteudo-skills {
+    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  }
 }
 
 .secao--conteudo--skills-item {
@@ -302,7 +363,8 @@ span {
 
 .secao--conteudo--skills-item p {
   box-sizing: border-box;
-  margin-top: 6px;
+  text-align: center;
+  padding: 4px 0;
   font-weight: 700;
   font-size: 70%;
 }
@@ -343,13 +405,14 @@ span {
 
 .secao--projetos-card-conteudo li {
   font-weight: 500;
-  margin-top: 20px;
+  margin-top: 16px;
+  padding-left: 8px;
 } 
 
-.secao--projetos-card-conteudo li::before {
+.secao--projetos-card-conteudo li::marker {
   content: "•";
-  padding-right: 14px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  padding-left: 14px;
 }
 
 .secao--projetos-card-links {
@@ -365,12 +428,60 @@ span {
   text-decoration: underline;
 }
 
+@media screen and (min-width:768px) {
+  .secao--projetos-card {
+    flex-direction: row;
+    padding: 16px;
+  }
+
+  .secao--projetos-card img {
+    width: 60%;
+    padding: 8px;
+    border: transparent;
+    border-radius: 16px;
+    margin: auto;
+  }
+
+  .secao--projetos-card-links {
+    display: flex;    
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .secao--projetos-card img {
+    width: 40%;
+    padding: 8px;
+    border: transparent;
+    border-radius: 16px;
+  }
+
+  .secao--projetos-card {
+    margin: 40px 16px;
+    box-sizing: border-box;
+  }
+}
+
 .secao--contato--card {
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-content: center;
  height: 30vh;
+}
+
+@media screen and (min-width: 768px) {
+  .secao--contato--card {
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .secao--contato--card {
+    height: 20%;
+    width: 30%;
+    margin: 0 auto;
+  }
 }
 
 .secao--contato--card i::before {
@@ -396,4 +507,66 @@ span {
   font-weight: 700;
   font-size: 0.9rem;
   padding: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: grid;
+    grid-template-columns: 9vw 1fr;
+  }
+  
+  main {
+    grid-column: 2;
+    margin: 0 15%;
+  }
+
+  .cabecalho {
+    position: fixed;
+    flex-direction: row-reverse;
+  }
+
+  .cabecalho__mode {
+    margin: 16px 32px 0 0;
+  }
+
+  .cabecalho__menu {
+    display: none;
+  }
+
+  .menu-lateral {  
+    position: fixed;
+    left: 0;
+    width: 9vw;
+    z-index: 11;
+    transition: width 0.4s;
+  }
+
+  .menu-lateral__link {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+  }
+
+  .menu-lateral:hover {
+    width: 18vw;
+    transition: width 0.4s;
+  }
+
+  .menu-lateral:hover > .menu-lateral__link {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.3s, opacity 0.3s linear;
+    display: flex;
+  }
+
+  .destaque {
+    flex-direction: row;
+    height: 100vh;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+  }
+  
+  .rodape {
+    grid-column: 2;
+  }
 }
