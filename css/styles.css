@@ -3,6 +3,10 @@
   src: url(../font/icones.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .dark-mode:root {
   --body-bg: #141414;
   --menu-lateral-text: #CCCCCC;
