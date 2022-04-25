@@ -96,7 +96,7 @@ main {
   }
 
   body {
-    zoom: 80%;
+    zoom: 75%;
     margin-top: 16px;
   }
 
@@ -170,6 +170,10 @@ main {
   .conteudo-direita, .conteudo-esquerda {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .cabecalho {
+    padding-left: 30px;
   }
 }
 
