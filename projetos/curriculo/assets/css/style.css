@@ -1,0 +1,402 @@
+@font-face {
+  font-family: 'icones';
+  src: url(../font/font.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  font-weight: 700;
+  line-height: 1;
+  font-size: 3rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 65%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1.5fr;
+  grid-template-rows: auto auto;
+  column-gap: 16px;
+  /* background-color: #e9e9e97e; */
+  padding-bottom: 32px;
+}
+
+.botoes {
+  grid-column: 2 span;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+}
+
+.botao-pdf {
+  padding: 8px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background-color: #177E89;
+  border: 1px solid #177E89;
+  cursor: pointer;
+}
+
+.botao-pdf:hover {
+  background-color: #177e8994;
+}
+
+.cabecalho {
+  grid-column: 2 span;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.cabecalho h2 {
+  font-weight: 500;
+  color: #177E89;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:900px) {
+  main {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 16px;
+  }
+}
+
+.contatos ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  padding-top: 12px;
+  row-gap: 8px;
+  column-gap: 6px;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.contatos-github {
+  grid-column: 2;
+}
+
+@media print {
+  main {
+    width: 100%;
+  }
+
+  body {
+    zoom: 85%;
+    margin-top: 16px;
+  }
+
+  .botoes {
+    display: none;
+  }
+
+  .contatos ul {
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+  }
+}
+
+
+.cabecalho li {
+  font-size: 0.9rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.contatos--item {
+  vertical-align: bottom;
+}
+
+.contatos--item::before {
+  color: #177E89;
+  font-family: 'icones';
+  padding-right: 8px;
+  font-size: 1.3rem;
+  vertical-align: text-bottom;
+}
+
+.contatos-email::before {
+  content: "\e945";
+}
+
+.contatos-telefone::before {
+  content: "\e959";
+}
+
+.contatos-endereco::before {
+  content: "\e902";
+}
+
+.contatos-site::before {
+  content: "\e9ca";
+}
+
+.contatos-linkedin::before {
+  content: "\eac9";
+}
+
+.contatos-github::before {
+  content: "\eab0";
+}
+
+.conteudo {
+  width: 100%;
+}
+
+.conteudo-esquerda {
+  padding-left: 45px;
+}
+
+.conteudo-direita {
+  padding-right: 45px;
+  padding-left: 32px;
+}
+
+@media screen and (max-width:900px) {
+  .conteudo-direita, .conteudo-esquerda {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.conteudo h2 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.secao--curriculo {
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.secao--curriculo:first-child {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.secao--curriculo h2 {
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 2px solid #000;
+}
+
+.secao--curriculo-conteudo {
+  padding-top: 26px;
+}
+
+.secao--curriculo p {
+  text-align: justify;
+  padding-top: 8px;
+  font-weight: 400;
+}
+
+.secao--curriculo h5 i::before {
+  font-weight: normal;
+  font-family: 'icones';
+  content: "\e953";
+}
+
+.secao--detalhes {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.secao--detalhes:first-child {
+  padding-top:0 ;
+}
+
+.secao--detalhes:last-child {
+  padding-bottom: 0;
+}
+
+.secao--detalhes h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.secao--detalhes h4 {
+  font-weight: 700;
+  color: #177E89;
+  font-size: 1.1rem;
+}
+
+.secao--detalhes p {
+  padding-top: 6px;
+}
+
+.secao--detalhes h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.secao--curiculo-skills li{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.secao--curiculo-skills img {
+  max-width: 2rem;
+  margin-right: 8px;
+}
+
+.secao--curiculo-skills p {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.progress-bar{
+  height: 20px;
+  width: 40%;
+  padding: 2px;
+  background-color: #ccc;
+  display: flex;
+  margin-left: auto;
+  --progress: 60;
+
+}
+
+.progress-bar::before{
+  content: "";
+  width: calc(var(--progress) * 1%);
+  background-color: hsl( calc(var(--progress) * 1.2) , 80%, 50%);
+  font-size: 0.8rem;
+  text-align: end;
+  font-weight: 500;
+}
+
+.progress-bar-git {
+  --progress: 80;
+}
+
+.progress-bar-git::before {
+  content: "80%";
+}
+
+.progress-bar-html {
+  --progress: 85;
+}
+
+.progress-bar-html::before {
+  content: "85%";
+}
+
+.progress-bar-css {
+  --progress: 75;
+}
+
+.progress-bar-css::before {
+  content: "75%";
+}
+
+.progress-bar-javascript {
+  --progress: 70;
+}
+
+.progress-bar-javascript::before {
+  content: "70%";
+}
+
+.progress-bar-node {
+  --progress: 70;
+}
+
+.progress-bar-node::before {
+  content: "70%";
+}
+
+.progress-bar-express {
+  --progress: 60;
+}
+
+.progress-bar-express::before {
+  content: "60%";
+}
+
+.progress-bar-sequelize {
+  --progress: 40;
+}
+
+.progress-bar-sequelize::before {
+  content: "40%";
+}
+
+.progress-bar-mysql {
+  --progress: 70;
+}
+
+.progress-bar-mysql::before {
+  content: "70%";
+}
+
+.progress-bar-mongodb {
+  --progress: 50;
+}
+
+.progress-bar-mongodb::before {
+  content: "50%";
+}
+
+.progress-bar-react {
+  --progress: 30;
+}
+
+.progress-bar-react::before {
+  content: "30%";
+}
+
+.progress-bar-bootstrap {
+  --progress: 80;
+}
+
+.progress-bar-bootstrap::before {
+  content: "80%";
+}
+
+.progress-bar-sass {
+  --progress: 90;
+}
+
+.progress-bar-sass::before {
+  content: "90%";
+}
+
+.secao--curriculo-conteudo-qualificacoes h3 {
+  color: #177E89;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.secao--curriculo-conteudo-qualificacoes ul {
+  padding-bottom: 16px;
+}
+
+.secao--curriculo-conteudo-qualificacoes li {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.secao--curriculo-conteudo-qualificacoes li::before {
+  content: "▪ "
+}
+
+.secao--curriculo .observacao {
+  text-align: left;
+  font-size: 0.8rem;
+}
