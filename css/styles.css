@@ -125,11 +125,12 @@ span {
   text-transform: uppercase;
 }
 
-.menu-lateral__link--ativo:hover, .menu-lateral__link--ativo:active{
-    color: var(--menu-lateral-text);
-    padding-left: 74px;
-    letter-spacing: 1.2px;
-    border-left: 8px solid var(--menu-lateral-text);
+.menu-lateral__link--ativo:hover,
+.menu-lateral__link--ativo:active {
+  color: var(--menu-lateral-text);
+  padding-left: 74px;
+  letter-spacing: 1.2px;
+  border-left: 8px solid var(--menu-lateral-text);
 }
 
 .menu-lateral__link::before {
@@ -168,7 +169,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 24px 24px 24px ;
+  padding: 48px 24px 24px 24px;
 }
 
 .destaque--hero-img {
@@ -268,7 +269,8 @@ span {
     padding-left: 0;
   }
 
-  .destaque--apresentacao-link a, .destaque--apresentacao-link {
+  .destaque--apresentacao-link a,
+  .destaque--apresentacao-link {
     padding: 0;
     justify-content: flex-start;
   }
@@ -314,6 +316,23 @@ span {
   height: 1px;
   background: var(--text-color);
   z-index: 9;
+}
+
+.destaque .botao__curriculo {
+  padding: 0.7rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--link-color);
+  transition: 1s all;
+  font-weight: 700;
+}
+
+.destaque .botao__curriculo:hover {
+  background-color: var(--secondary-color);
+  color: var(--contrast-color);
 }
 
 .secao--projetos-card-links .botao__projeto {
@@ -436,7 +455,7 @@ span {
   font-weight: 500;
   margin-top: 16px;
   padding-left: 8px;
-} 
+}
 
 .secao--projetos-card-conteudo li::marker {
   content: "•";
@@ -472,7 +491,7 @@ span {
   }
 
   .secao--projetos-card-links {
-    display: flex;    
+    display: flex;
   }
 }
 
@@ -491,11 +510,11 @@ span {
 }
 
 .secao--contato--card {
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
- height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -543,7 +562,7 @@ span {
     display: grid;
     grid-template-columns: 9vw 1fr;
   }
-  
+
   main {
     grid-column: 2;
     margin: 0 15%;
@@ -562,7 +581,7 @@ span {
     display: none;
   }
 
-  .menu-lateral {  
+  .menu-lateral {
     position: fixed;
     left: 0;
     width: 9vw;
@@ -581,11 +600,26 @@ span {
     transition: width 0.4s;
   }
 
-  .menu-lateral:hover > .menu-lateral__link {
+  .menu-lateral:hover>.menu-lateral__link {
     visibility: visible;
     opacity: 1;
     transition: visibility 0.3s, opacity 0.3s linear;
     display: flex;
+  }
+
+  .menu-lateral p {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 3s, opacity 3s linear;
+    padding: 0.2rem;
+    text-align: center;
+    color: var(--menu-lateral-text);
+  }
+
+  .menu-lateral:hover p {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0s linear;
   }
 
   .destaque {
@@ -594,7 +628,7 @@ span {
     justify-content: space-evenly;
     box-sizing: border-box;
   }
-  
+
   .rodape {
     grid-column: 2;
   }
