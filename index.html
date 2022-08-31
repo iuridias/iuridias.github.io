@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
   <header class="cabecalho">
     <button class="cabecalho__mode" aria-label="Dark e Light Mode"><i></i></button>
@@ -33,7 +35,8 @@
       <div class="destaque--apresentacao">
         <p class="destaque--apresentacao-saudacao">Olá! Eu sou o</p>
         <h1 class="destaque--apresentacao-titulo"><span>Iuri</span> Dias</h1>
-        <p class="destaque--apresentacao-bio">Um <span>Desenvolvedor Full Stack</span> em formação, motivado a aprender e colocar muitos projetos em prática.</p>
+        <p class="destaque--apresentacao-bio">Um <span>Desenvolvedor Full Stack</span> em formação, motivado a aprender
+          e colocar muitos projetos em prática.</p>
         <ul class="destaque--apresentacao-links">
           <li class="destaque--apresentacao-link"><a href="https://www.linkedin.com/in/iuridias-/" target="_blank"><img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
@@ -51,10 +54,21 @@
         <h2 class="secao--separador-titulo">Sobre</h2>
       </div>
       <section class="secao--conteudo">
-        <p>Sou um desenvolvedor Full Stack em formação, atualmente trabalho como Analista de Suporte de TI há 3 anos, apesar de atuar na área há pelo menos 12 anos.</p>
-        <p>Antes de trabalhar como Suporte, atuei como instrutor de de informática básica. Nesse período tive a oportunidade de ministrar palestras sobre tecnologia e fui aplicador do <span>MOS (Microsoft Office Specialist)</span>, certificado internacional da Microsoft que comprova as competências nos programas da suíte Office. Fazia a preparação do candidato, aplicava simulados e acompanhava a avaliação. Tive uma média acima de 95% em aprovações, sendo o único local no Rio de Janeiro a aplicar tal prova. Meu certificado você pode visualizar lá no <span>Linkedin</span>.</p>
-        <p>Estou realizando toda minha trilha Full Stack na <span>Alura</span>, através do projeto Desenvolve 2022 do <span>Grupo Boticário</span>, no qual tive a oportunidade de ser um dos selecionados.</p>
-        <p>Muito focado em aprender, desenvolvi esse site para servir como meu portfólio utilizando HTML, CSS e Javascript. Pretendo colocar todos meus projetos por aqui, mas você também pode ver meus repositórios no Github, lá coloco minhas APIs back-end desenvolvidas através dos cursos, além de futuros projetos pessoais.</p>
+        <p>Sou um desenvolvedor Full Stack em formação, atualmente trabalho como Analista de Suporte de TI há 3 anos,
+          apesar de atuar na área há pelo menos 12 anos.</p>
+        <p>Antes de trabalhar como Suporte, atuei como instrutor de de informática básica. Nesse período tive a
+          oportunidade de ministrar palestras sobre tecnologia e fui aplicador do <span>MOS (Microsoft Office
+            Specialist)</span>, certificado internacional da Microsoft que comprova as competências nos programas da
+          suíte Office. Fazia a preparação do candidato, aplicava simulados e acompanhava a avaliação. Tive uma média
+          acima de 95% em aprovações, sendo o único local no Rio de Janeiro a aplicar tal prova. Meu certificado você
+          pode visualizar lá no <span>Linkedin</span>.</p>
+        <p>Estou realizando toda minha trilha Full Stack na <span>Alura</span>, através do projeto Desenvolve 2022 do
+          <span>Grupo Boticário</span>, no qual tive a oportunidade de ser um dos selecionados.
+        </p>
+        <p>Muito focado em aprender, desenvolvi esse site para servir como meu portfólio utilizando HTML, CSS e
+          Javascript. Pretendo colocar todos meus projetos por aqui, mas você também pode ver meus repositórios no
+          Github, lá coloco minhas APIs back-end desenvolvidas através dos cursos, além de futuros projetos pessoais.
+        </p>
       </section>
     </article>
     <article class="secao skills" id="id-skills">
@@ -148,23 +162,42 @@
         <h2 class="secao--separador-titulo">Projetos</h2>
       </div>
       <section class="secao--conteudo">
-        <section class="secao--projetos-card">
+        <article class="secao--projetos-card">
+          <img src="./images/toughts.jpg" alt="Projeto Toughts">
+          <div class="secao--projetos-card-conteudo">
+            <h3>Projeto Toughts - NodeJS com Express</h3>
+            <h4>Tecnologias utilizadas: <span>NodeJS, Express, Handlebars, MongoDB.</span></h4>
+            <ul>
+              <li>Projeto Serverless com Express e MongoDB.</li>
+              <li>Nesse projeto, o usuário pode criar uma conta e fazer postagens de pensamentos.</li>
+              <li>Tem um sistema de registro e login, e também utilizei Sessions e Cookies.</li>
+              <li>Projeto baseado em um curso que realizei na Udemy, a príncipio era feito em MySQL e Sequelize.</li>
+              <li>Para facilitar o projeto, utilizei a template engine Handlebars, optei pela facilidade de uso e
+                versatilidade.</li>
+            </ul>
+            <div class="secao--projetos-card-links">
+              <a href="https://projeto-toughts.vercel.app/" class="botao__projeto" target="_blank">Visualize aqui</a>
+              <a href="https://github.com/iuridias/projeto-toughts" class="botao__projeto botao__rep" target="_blank">Repositório</a>
+            </div>
+          </div>
+        </article>
+        <article class="secao--projetos-card">
           <img src="./images/projetct-1.jpg" alt="Projeto HZC - Flexbox e Grid CSS">
           <div class="secao--projetos-card-conteudo">
             <h3>Projeto HZC - Flexbox e Grid CSS</h3>
-            <h4>Tecnologias utilizadas: <span>HTML, CSS  e Javascript.</span></h4>
+            <h4>Tecnologias utilizadas: <span>HTML, CSS e Javascript.</span></h4>
             <ul>
               <li>Projeto que utiliza as propriedades Flex e Grid, baseado no curso da Alura.</li>
               <li>Projeto totalmente responsivo para mobile, tablets e pc.</li>
               <li>Utilizei o básico de JS para criar a animação de abrir o menu no modo mobile.</li>
             </ul>
             <div class="secao--projetos-card-links">
-              <a href="https://iuridias.github.io/projetos/flex-e-grid/index.html" target="_blank">Exemplo</a>
-              <a href="https://github.com/iuridias/projeto-flex-grid" target="_blank">Repositório</a>
+              <a href="https://iuridias.github.io/projetos/flex-e-grid/index.html"  class="botao__projeto" target="_blank">Visualize aqui</a>
+              <a href="https://github.com/iuridias/projeto-flex-grid"  class="botao__projeto botao__rep" target="_blank">Repositório</a>
             </div>
           </div>
-        </section>
-        <section class="secao--projetos-card">
+        </article>
+        <article class="secao--projetos-card">
           <img src="./images/project-2.jpg" alt="Projeto Apeperia">
           <div class="secao--projetos-card-conteudo">
             <h3>Projeto Apeperia</h3>
@@ -175,11 +208,11 @@
               <li>Excelente visualização em celulares.</li>
             </ul>
             <div class="secao--projetos-card-links">
-              <a href="https://iuridias.github.io/projetos/projeto-apeperia/index.html" target="_blank">Exemplo</a>
-              <a href="https://github.com/iuridias/projeto-apeperia" target="_blank">Repositório</a>
+              <a href="https://iuridias.github.io/projetos/projeto-apeperia/index.html"  class="botao__projeto" target="_blank">Visualize aqui</a>
+              <a href="https://github.com/iuridias/projeto-apeperia"  class="botao__projeto botao__rep" target="_blank">Repositório</a>
             </div>
           </div>
-        </section>
+        </article>
       </section>
     </article>
     <article class="secao contato" id="id-contato">
